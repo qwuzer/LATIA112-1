@@ -12,5 +12,5 @@
 ## 作業連結區
 
 ### 作業一
-
+- [Data processing hw1](https://github.com/qwuzer/LATIA112-1/blob/main/DataProcess.ipynb)
 

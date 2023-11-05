@@ -12,7 +12,7 @@
 ## 作業連結區
 
 ### 作業一
-- [Data processing hw1](https://github.com/qwuzer/LATIA112-1/blob/main/DataProcess.ipynb)
+- [Data processing hw1](https://github.com/qwuzer/LATIA112-1/blob/main/Hw1/DataProcess.ipynb)
 ### 作業二
 - [hw2](https://github.com/qwuzer/LATIA112-1/blob/main/Hw2/hw2.ipynb)
 

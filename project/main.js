@@ -1,8 +1,7 @@
-d3.csv("https://raw.githubusercontent.com/ryanchung403/dataset/main/train_data_titanic.csv").then(
+d3.csv("https://raw.githubusercontent.com/qwuzer/LATIA112-1/main/project/faraway1.csv").then(
     res => {
         console.log(res);
         drawPieChart(res);
-        drawBarChart(res);
     }
 );
 
@@ -12,11 +11,9 @@ function drawPieChart(res) {
     let maleCount = 0;
     let femaleCount = 0;
     for (let i = 0; i < res.length; i++) {
-        if (res[i]["Sex"] === "male") {
-            maleCount++;
-        } else {
-            femaleCount++;
-        }
+      maleCount += parseInt(res[i]["男學生數"]);
+      femaleCount += parseInt(res[i]["女學生數"]);
+    //   console.log(maleCount);
     }
 
     let data = [{
@@ -31,7 +28,7 @@ function drawPieChart(res) {
     }];
 
     let layout = {
-        title: 'Gender Distribution on the Titanic',
+        title: 'Gender Distribution on faraway schools',
         margin: {
             t: 40,
             l: 0
@@ -46,47 +43,47 @@ function drawPieChart(res) {
 }
 
 
-function drawBarChart (res){
-    let myGraph = document.getElementById('BarChart');
+// function drawBarChart (res){
+//     let myGraph = document.getElementById('BarChart');
 
-    let count1 = 0;
-    let count2 = 0;
+//     let count1 = 0;
+//     let count2 = 0;
 
-    for (let i = 0; i < res.length; i++) {
-        if( res[i]["Age"] < 50){
-            count1++;
-        } else {
-            count2++;
-        }
-    }
+//     for (let i = 0; i < res.length; i++) {
+//         if( res[i]["Age"] < 50){
+//             count1++;
+//         } else {
+//             count2++;
+//         }
+//     }
 
 
-    let data =[];
-    data =[{
-        type: "bar",
-        x: ["Age < 50", "Age >= 50"],
-        y: [count1, count2],
-        text: [count1, count2],
-        textfont: {
-            size: 15,
-            color: 'white',
-        },
-        marker: {
-            color: ['orange', 'blue']
-        },
-        domain: {
-            row: 0,
-            column: 1
-        }
-    }]
+//     let data =[];
+//     data =[{
+//         type: "bar",
+//         x: ["Age < 50", "Age >= 50"],
+//         y: [count1, count2],
+//         text: [count1, count2],
+//         textfont: {
+//             size: 15,
+//             color: 'white',
+//         },
+//         marker: {
+//             color: ['orange', 'blue']
+//         },
+//         domain: {
+//             row: 0,
+//             column: 1
+//         }
+//     }]
 
-    let layout ={
-        margin:{
-            t:0,
-            l:30
-        }
-    };
+//     let layout ={
+//         margin:{
+//             t:0,
+//             l:30
+//         }
+//     };
 
-    Plotly.newPlot(myGraph, data, layout);
+//     Plotly.newPlot(myGraph, data, layout);
 
-}
+// }

@@ -20,4 +20,4 @@
 - [Sentiment-Line-Bot](https://github.com/qwuzer/LATIA112-1/tree/main/ReviewBot)
 
 ### 作業四
-- [plotly cahrts on website](https://qwuzer.github.io/)
+- [plotly charts on website](https://qwuzer.github.io/)
